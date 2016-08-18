@@ -6,9 +6,13 @@
 var sum = 0;
 
 //We are searching for multiple up to this number
-var maxNum = 0;
+var maxNum = 1000;
 
 //We are searching for multiples of numbers
 const var multiple1 = 3;
 const var multiple2 = 5;
 
+for (i = 1; i < maxNum; i++)
+{
+	
+}
