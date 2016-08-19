@@ -9,10 +9,14 @@ var fibNum = 0;
 var sumOfEvens = 0;
 var maxValue = 4000000;
 
-for (i = 1; i <= 10; i++)
+for (i = 1; i < 10; i++)
 {
-	console.log(firstNum);
-	console.log(secondNum);
+	if (secondNum % 2 === 0)
+	{
+		sumOfEvens += secondNum;
+	}
+
+	console.log("The sum of the evens thus far is " + sumOfEvens);
 
 	fibNum = firstNum + secondNum;
 	firstNum = secondNum;
