@@ -12,7 +12,17 @@ var maxNum = 1000;
 const var multiple1 = 3;
 const var multiple2 = 5;
 
+//Cycle through number, add to sum where appropriate
 for (i = 1; i < maxNum; i++)
 {
-	
+	if (i % multiple1 === 0)
+	{
+		sum = sum + i;
+	}
+	else if (i % multiple2 === 0)
+	{
+		sum = sum + i;
+	}
 }
+
+console.log(sum);
