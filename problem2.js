@@ -9,16 +9,18 @@ var fibNum = 0;
 var sumOfEvens = 0;
 var maxValue = 4000000;
 
-for (i = 1; i < 10; i++)
+//for (i = 1; i < 10; i++)
+while (secondNum < maxValue)
 {
 	if (secondNum % 2 === 0)
 	{
 		sumOfEvens += secondNum;
 	}
 
-	console.log("The sum of the evens thus far is " + sumOfEvens);
-
 	fibNum = firstNum + secondNum;
 	firstNum = secondNum;
 	secondNum = fibNum;
 }
+
+console.log("The sum of all even Fibonacci numbers with values under 4 milli is " 
+			+ sumOfEvens);
