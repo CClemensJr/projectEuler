@@ -5,5 +5,16 @@
 //four million, find the sum of the even-valued terms.
 var firstNum = 1;
 var secondNum = 2;
+var fibNum = 0;
 var sumOfEvens = 0;
 var maxValue = 4000000;
+
+for (i = 1; i <= 10; i++)
+{
+	console.log(firstNum);
+	console.log(secondNum);
+
+	fibNum = firstNum + secondNum;
+	firstNum = secondNum;
+	secondNum = fibNum;
+}
