@@ -4,3 +4,11 @@
 //about making it efficient. You won't need to do any crazy math -- think iteration 
 //and make the computer do the work. Consider it extra credit to make your solution 
 //solve for larger numbers in a way that isn't too slow.
+
+var primeFactorFunction = function(number)
+{
+
+};
+
+primeFactorFunction(6);
+
