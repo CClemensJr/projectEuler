@@ -7,7 +7,15 @@
 
 var primeFactorFunction = function(number)
 {
+	var primFactorArray[] = [0];
+	var toBeFactored = 0;
 
+	for (i = 1; i <= number; i++)
+	{
+		toBeFactored = number / i;
+
+		
+	}
 };
 
 primeFactorFunction(6);
