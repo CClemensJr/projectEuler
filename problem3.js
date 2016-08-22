@@ -5,46 +5,30 @@
 //and make the computer do the work. Consider it extra credit to make your solution 
 //solve for larger numbers in a way that isn't too slow.
 
-var isPrime = function(number)
+//function to find the highest prime number
+var optimusPrime = function(number)
 {
-	var primeNum = true;
-
+	//go through the numbers leading up to the number entered, starting with the
+	//first prime number, 2
 	for (var i = 2; i < number; i++)
 	{
-		if (number % i === 0 && number !== 2)
-		{
-			primeNum = false; 
-		}
-		else
-		{
-			primeNum = true;	
-		}
-	}
-	
-	if (primeNum) 
-	{
-		return console.log("The number is " + primeNum);
-	}
-	else
-	{
-		return console.log("The number is " + primeNum);
-	}
-};
-
-var primeFactorFunction = function(number)
-{
-	var primFactorArray[] = [0];
-
-	for (var i = 2; i < number; i++)
-	{
+		//if i divides evenly into the number...
 		if (number % i === 0)
 		{
+			//...then we know that i is a multiple of number...
+			console.log(i + " is a multiple of " + number);
 
+			//so we just keep dividing number by i until it can't be divided
+			//no more...
+			return optimusPrime(number / i);
 		}
 
-		
+		//...which yields the largest prime number...
+		console.log(number + " is the Optimused Prime Factor");
 	}
 };
 
-primeFactorFunction(6);
+
+
+primeFactorFunction();
 
