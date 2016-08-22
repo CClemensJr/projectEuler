@@ -5,14 +5,42 @@
 //and make the computer do the work. Consider it extra credit to make your solution 
 //solve for larger numbers in a way that isn't too slow.
 
+var isPrime = function(number)
+{
+	var primeNum = true;
+
+	for (var i = 2; i < number; i++)
+	{
+		if (number % i === 0 && number !== 2)
+		{
+			primeNum = false; 
+		}
+		else
+		{
+			primeNum = true;	
+		}
+	}
+	
+	if (primeNum) 
+	{
+		return console.log("The number is " + primeNum);
+	}
+	else
+	{
+		return console.log("The number is " + primeNum);
+	}
+};
+
 var primeFactorFunction = function(number)
 {
 	var primFactorArray[] = [0];
-	var toBeFactored = 0;
 
-	for (i = 1; i <= number; i++)
+	for (var i = 2; i < number; i++)
 	{
-		toBeFactored = number / i;
+		if (number % i === 0)
+		{
+
+		}
 
 		
 	}
